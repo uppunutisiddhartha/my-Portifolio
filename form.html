@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddhartha Portifolio </title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+
+    }
+
+    body {
+      background-color: rgb(33, 32, 32);
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+
+    .contact {
+      margin-top:10px;
+      text-align: center;
+      color: #f2f5f6;
+    }
+
+    .contact h2 {
+      color: white;
+      background-image: linear-gradient(blue, pink);
+      -webkit-background-clip: text;
+      font-size: 60px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: transparent;
+
+    }
+
+    .form-group label {
+      text-align: left;
+      color: white;
+      margin-right: 630px;
+    }
+
+    .form-group input {
+      width: 650px;
+      padding: 10px;
+      margin-bottom: 20px;
+      background: gray;
+    }
+
+    .form-group textarea {
+      width: 650px;
+      height: 350px;
+      padding: 10px;
+      margin-bottom: 20px;
+      background: gray;
+    }
+
+    .form-group ::placeholder {
+      color: #292727;
+    }
+
+
+    label[for="message"] {
+      margin-left: -50px;
+    }
+
+    label[for="email"] {
+      margin-left: -15px;
+    }
+
+    label[for="name"] {
+      margin-left: -35px;
+    }
+
+
+
+    button[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      position: absolute;
+      right: 95px;
+      margin-top: -5px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      width: 660px;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+
+    }
+
+
+
+    button[type="submit"]:hover {
+      background-color: #eaeaea;
+    }
+
+
+
+    .contact h3 {
+      color: white;
+      font-size: 30px;
+      margin-top: 30px;
+      margin-right: 400px;
+
+    }
+
+    .contact p {
+      color: white;
+      font-size: 15px;
+      margin-left: -50px;
+    }
+
+    .details p a {
+      color: whitesmoke;
+    }
+
+    .details p a:hover {
+      color: #6e7479;
+
+    }
+
+    .details #email {
+      color: smokewhite;
+      margin-left: -280px;
+    }
+
+    .details #number {
+      color: smokewhite;
+      margin-left: -380px;
+    }
+
+    .details #map {
+      color: smokewhite !important;
+      margin-left: -340px;
+    }
+
+    .details #link i {
+      color: smokewhite;
+      margin-left: -357px;
+      font-size: 18px;
+      padding-right: 10px;
+    }
+
+    .details #lin i {
+      color: smokewhite;
+      margin-left: -387px;
+      font-size: 18px;
+      padding-right: 10px;
+    }
+
+    .page-footer {
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 100px;
+
+      width: 100%;
+
+      border-left: 40px;
+    }
+
+    .page-footer p {
+      font-size: 13px;
+      margin-top: 10px;
+      padding-top: 50px;
+      margin-left: 40px;
+      margin-right: 80px;
+      color: rgb(255, 255, 255);
+      margin-bottom: -10;
+      padding-bottom: 0;
+      text-align: left;
+    }
+
+    .page-footer h5 {
+      color: white;
+      margin-right: 30px;
+      font-size: 25px;
+      margin-left: 40px;
+      margin-bottom: -55px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .social {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+    .social i {
+      margin-right: 20px;
+      font-size: 20px;
+      color: aqua;
+      transition: transform 0.3s ease, cursor 0.3s ease;
+    }
+
+    .social i:hover {
+      transform: scale(1.1);
+    }
+
+    .sub {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+
+    .input-container {
+      position: relative;
+      width: 300px;
+    }
+
+
+    .input-container i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: gray;
+      font-size: 16px;
+    }
+
+    .input-container input {
+      width: 500px;
+      padding: 10px 10px 10px 35px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+    }
+
+
+    .sub .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      color: white;
+      align-content: center;
+      justify-content: center;
+
+      background: linear-gradient(blue, aqua);
+      border: solid 2px aqua;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 200px;
+      margin-left: 200px;
+      height: 50px;
+    }
+
+    .sub .btn:hover {
+      background-color: #0056b3;
+    }
+
+
+    .input-container input::placeholder {
+      text-align: left;
+      color: gray;
+      font-style: italic;
+    }
+
+    #js {
+      margin-left: 12px;
+    }
+
+    a {
+      color: aqua;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .page-footer .copyright p {
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      border-top: white solid 2px;
+      margin-top: 10px;
+      margin-bottom: -120px;
+    }
+
+    #newpro {
+      margin-top: 600px;
+      margin-left: 450px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #newpro i {
+      font-size: 35px;
+      text-align: center;
+      padding-left: 10px;
+    }
+
+
+
+
+    @media (max-width: 480px) {
+      body {
+        overflow-x: hidden;
+      }
+
+
+      .contact {
+        margin-top: 100px;
+        margin-left: 40px;
+        margin-right: auto;
+        justify-content: center;
+      }
+
+      .contact h2 {
+        font-size: 80px;
+        width: 500px;
+        text-align: left;
+        margin-left: -40px;
+      }
+
+      .contactForm {
+        margin-left: -80px;
+      }
+
+      .contact h3 {
+        font-size: 50px;
+        width: 500px;
+        margin-left: -200px;
+      }
+
+      .contact p {
+        width: 650px;
+        margin-left: -70px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      .details {
+        margin-left: 60px;
+        margin-top: 20px;
+      }
+
+      .details #number {
+        font-size: 25px;
+        margin-left: -330px;
+      }
+
+      .details #email {
+        font-size: 25px;
+        margin-left: -245px;
+      }
+
+      .details #map {
+        font-size: 25px;
+        margin-left: -290px;
+      }
+
+      .details #link i {
+        font-size: 25px;
+        margin-left: -595px;
+        font-size: 28px;
+      }
+
+      .details #lin i {
+        font-size: 25px;
+        margin-left: -632px;
+        font-size: 28px;
+      }
+
+      #contactForm {
+        margin-top: 20px;
+        margin-left: -30px;
+        margin-right: auto;
+        justify-content: center;
+       
+      }
+
+      .form-control {
+        height: 90px;
+        border-radius: 15px;
+      }
+
+      .form-control::placeholder {
+        color: rgb(45, 43, 43);
+        font-weight: bold;
+        margin-left: 40px;
+      }
+
+      .form-group label {
+
+        display: inline-block;
+        width: 10%;
+        white-space: nowrap;
+        margin-bottom: 5px;
+
+        margin-left: 10px;
+      }
+
+      #contactForm .btn {
+        position: absolute;
+        left:0px;
+        width: 650px;
+        margin-left: -10px;
+        height: 90px;
+        margin-top: 10px;
+        border-radius: 50px;
+
+      }
+
+      .page-footer {
+        margin-top: 150px;
+      }
+
+      .page-footer p {
+        margin-left: 30px;
+        margin-right: 20px;
+        width: 580px;
+        font-size: 20px !important;
+      }
+
+      .page-footer h5 {
+        font-size: 40px;
+        margin-bottom: -40px;
+      }
+
+      .input-container {
+        width: 680px;
+
+        display: flex;
+        gap: 10px;
+      }
+
+      .input-container {
+        width: 1000px;
+        height: 60px;
+        margin-left: 30px;
+      }
+
+      .sub .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-left: 100px;
+      }
+
+      .page-footer h5 {
+        font-size: 45px;
+        margin-top: 40px;
+      }
+
+      .page-footer p {
+        font-size: 12px;
+        width: 700px;
+        margin-top: -50px;
+      }
+
+      .social {
+        justify-content: center;
+      }
+
+      .input-container input {
+        width: 100%;
+      }
+
+      .sub .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      #newpro {
+        margin-top: 880px;
+        margin-left: 220px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sub .btn {
+
+        position: absolute;
+        margin-left: 500px;
+        margin-right: 40px;
+        width: 180px;
+        height: 60px;
+      }
+
+      .input-container i {
+        margin-left: 15px;
+      }
+
+      .input-container #email {
+        margin-left: 10px;
+        width: 450px;
+        height: 60px;
+      }
+
+      .social {
+        align-items: center;
+        display: flex !important;
+        justify-content: center;
+        text-align: center;
+        margin-left: 250px;
+      }
+
+      .social i {
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+      }
+
+      .copyright {
+
+        margin-left: 0px;
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .copyright p {
+        width: 750px;
+        font-size: 6px;
+      }
+
+    }
+  </style>
+
+<body>
+
+  <div class="contact">
+    <section class="contact" id="contact">
+      <h2>Get in touch</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Let's talk</h3>
+          <p class="left-align">
+            I'm available for new projects and would love to collaborate!<br> Feel free to reach out anytime, with ideas
+            or tasks you'd like help with.
+          </p>
+          <div class="details">
+            <p id="email">
+              <a href="mailto:uppunutisiddhartha@gmail.com">
+                <i class="fas fa-envelope"></i> uppunutisiddhartha@gmail.com
+              </a>
+            </p>
+            <p id="number"><i class="fas fa-phone"></i> +91 9030425546</p>
+            <p id="link">
+              <a href="https://www.linkedin.com/in/siddhartha55" target="_blank">
+                <i class="fab fa-linkedin"></i>MY linkedin
+              </a>
+            </p>
+            <p id="lin">
+              <a href="contact.html" target="_blank">
+                <i class="fab fa-linkedin"></i>Contact
+              </a>
+            <p id="map">
+              <a href="https://maps.app.goo.gl/nr7CAnDZkBWYfFTHA"><i class="fas fa-map-marker-alt"></i> Rajanna
+                Sircilla, Vanpalli
+            </p></a>
+
+
+          </div>
+        </div>
+        <div class="col-md-6">
+
+
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="066b02a2-87e0-48fe-9533-62585a0c1a53">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control " id="message" name="message" rows="4" placeholder="Enter Your message"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="page-footer">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Siddhartha</h5>
+        <p>"Full Stack Developer with expertise in Python, Django, and Web developer. Passionate about building web
+          apps, and improving user experience.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="sub">
+          <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="email" placeholder="Enter your email address" id="email">
+          </div>
+          <button type="button" class="btn">Get in touch</button>
+        </div>
+
+        <div class="social">
+
+          <a href="https://github.com/uppunutisiddhartha"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/siddhartha55"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/siddu_12?igsh=bjF1MWZkZHNreWZp"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/siddhartha24907"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100052581255659"><i class="fab fa-facebook"></i></a>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025, All rights reserved.Designed by Siddhartha Uppunuti</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html> just  make responsive  dont change the live design
