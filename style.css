@@ -805,7 +805,9 @@ footer p{
   margin: 0px;
 }
 .contact-form .btn{
-  width: 330px;
+  width: 140px;
+ text-align: right;
+ align-items: end;
 }
 .contact-form{
  margin-left: 30px;
