@@ -261,6 +261,12 @@ nav ul li a:hover {
 
 .project-desc p {
   color: rgb(182, 176, 176);
+  white-space: normal;
+  word-break: normal;
+  width: auto;
+  max-width: 100%;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .project-desc h6 {
