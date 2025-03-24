@@ -65,6 +65,7 @@
     <div class="row">
         <div id="About1" class="col-md-4">
             <h1>About</h1>
+            
         </div>
         <div class="col-md-7">
             <p>🎓I am Uppunuti Siddhartha, a dedicated Software Developer with a strong foundation in full-stack web
@@ -108,6 +109,48 @@
             </div>
         </div>
     </div>
+    <div class="img-container">
+        <div class="img-container">
+            <img src="assets/animated.png" id="rotating-img" alt="">
+            <div class="overlay-text">
+              <p class="slide-right">I constantly try to improve</p>
+              <h2 class="slide-left">My <span>Tech Stack</span></h2>
+            </div>
+          </div>
+          
+
+    </div>
+    
+    
+    <div class="main">
+        <div class="badge-container">
+            <div class="badge-container">
+                <span class="badge python"><i class="fab fa-python"></i> Python</span>
+                <span class="badge django"><i class="fas fa-leaf"></i> Django</span>
+                <span class="badge flask"><i class="fas fa-flask"></i> Flask</span>
+                <span class="badge restapi"><i class="fas fa-plug"></i> REST API</span>
+                <span class="badge html"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="badge css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="badge js"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="badge react"><i class="fab fa-react"></i> React.js</span>
+                <span class="badge git"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="badge github"><i class="fab fa-github"></i> GitHub</span>
+                <span class="badge postgres"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="badge mysql"><i class="fas fa-database"></i> MySQL</span>
+                <span class="badge sqlite"><i class="fas fa-database"></i> SQLite</span>
+                
+                <span class="badge vercel"><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
+                <span class="badge heroku"><i class="fab fa-heroku"></i> Heroku</span>
+                <span class="badge aws"><i class="fab fa-aws"></i> AWS</span>
+               
+                <span class="badge bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span class="badge tailwind"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                <span class="badge api"><i class="fas fa-code"></i> API Integration</span>
+              </div>
+          </div>
+        
+    </div>
+    
 </section>
 <section id="project">
     <div class="row">
@@ -412,7 +455,17 @@
 function clearForm() {
   document.getElementById("contactForm").reset();
   return true; 
-}
+}const rotatingImg = document.getElementById('rotating-img');
+
+window.addEventListener('scroll', () => {
+  // Get scroll amount
+  const scrollY = window.scrollY;
+  
+  // Rotate based on scroll position
+  rotatingImg.style.transform = `rotate(${scrollY / 4}deg)`;
+});
+
+
 
 </script>
 

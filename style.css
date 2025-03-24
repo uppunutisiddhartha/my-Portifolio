@@ -159,6 +159,7 @@ nav ul li a:hover {
   padding: 50px 0;
 }
 
+
 #About1 h1 {
   font-size: 75px;
   color: #f3f3f3;
@@ -228,6 +229,110 @@ nav ul li a:hover {
   color: rgb(22, 22, 230);
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  margin: 20px;
+  position: relative; /* ADD THIS */
+}
+
+.img-container img {
+  width: 250px;  
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom:0px;
+  transition: transform 0.2s linear;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  width: 550px;
+  transform: translate(-50%, -50%);
+  color: rgb(244, 240, 240); 
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  text-align: center;
+margin-top: 70px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  pointer-events: none; 
+  
+}
+.overlay-text h2{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  width:100% ;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 10px 8px 22px rgba(6, 6, 6, 0.7);
+}
+.overlay-text span{
+  color: rgb(22, 22, 230);
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  font-size: 15px;
+  color: #374151;
+  transition: 0.3s;
+  transition: all 0.3 ease;
+  animation: popIn 0.8s ease forwards;
+}
+
+.badge i {
+  margin-right: 8px;
+  font-size: 22px;
+  
+}
+.python { color: #3776AB; }
+.django { color: #092E20; }
+.restapi { color: #E34F26; }
+.html { color: #E44D26; }
+.css { color: #264DE4; }
+.js { color: #F7DF1E; }
+.react { color: #61DBFB; }
+.git { color: #F05032; }
+.github { color: #181717; }
+.postgres { color: #336791; }
+.mysql { color: #00758F; }
+.sqlite { color: #003B57; }
+.docker { color: #0db7ed; }
+.vercel { color: black; }
+.heroku { color: #430098; }
+.aws { color: #FF9900; }
+.linux { color: #FCC624; }
+.bootstrap { color: #7952B3; }
+.tailwind { color: #38B2AC; }
+.api { color: #4A5568; }
+
+.badge:hover {
+  background-color: #58585a;
+  transform:scale(1.1)rotate(5deg);;
+}
 .project-title {
   cursor: pointer;
   color: rgb(247, 248, 249);
