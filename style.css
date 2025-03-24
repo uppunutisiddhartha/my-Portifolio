@@ -796,12 +796,14 @@ footer p{
     font-size: 15px;
    }
   #About1 h1 {
-    font-size: 100px;
+    font-size: 90px;
+    text-align: left;
+    margin-left: 0;
   }
 
   #project h1 {
-   margin-left: 10px;
-    font-size: 60px;
+   margin-left:-10px;
+    font-size:50px;
     text-align: left;
     display: flex;
   }
@@ -938,32 +940,7 @@ text-align: center;
   color: white;
 text-align: center;
  }
- .img-container img {
-  margin-top: 20px;
-}
-
-.overlay-text {
-  font-size: 12px;
-  margin-top: 30px;
-}
-
-.overlay-text h2 {
-  font-size: 1.5rem;
-}
-
-.badge-container {
-  gap: 8px;
-}
-
-.badge {
-  font-size: 11px;
-  padding: 5px 8px;
-}
-
-.badge i {
-  font-size: 14px;
-}
-}
+ 
 
 
 @media (max-width: 768px) {
