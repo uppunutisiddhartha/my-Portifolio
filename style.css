@@ -938,7 +938,32 @@ text-align: center;
   color: white;
 text-align: center;
  }
- 
+ .img-container img {
+  margin-top: 20px;
+}
+
+.overlay-text {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.overlay-text h2 {
+  font-size: 1.5rem;
+}
+
+.badge-container {
+  gap: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 5px 8px;
+}
+
+.badge i {
+  font-size: 14px;
+}
+}
 
 
 @media (max-width: 768px) {
