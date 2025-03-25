@@ -806,9 +806,13 @@ footer p{
   .project-desc {
     margin-left: 20px;
   }
+  .project-desc  p{
+    word-spacing:-4px;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .skill{
     margin: 0px;
-   font-size: 45px;
+   font-size: 50px;
   }
   .skill h1{
 
@@ -821,6 +825,9 @@ footer p{
   }
   #project .btn{
     margin-top: 50px;
+  }
+  #project h1{
+    font-size: 50px;
   }
   #highlights h1{
    text-align: left;
@@ -837,7 +844,9 @@ footer p{
 #highlights .col-md-7 {
   flex: 1;
 }
-
+#highlights .col-md-5 h1{
+  font-size: 55px;
+}
 #highlights .col-md-5 {
   max-width: 40%; 
 }
