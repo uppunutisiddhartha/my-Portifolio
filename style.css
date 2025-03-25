@@ -243,12 +243,23 @@ nav ul li a:hover {
 }
 .skill{
   text-align: center ;
-  margin-top: 30px;
+  margin-top: 50px;
   color: rgb(255, 255, 255);
   font-size: 80px;
 }
+.skill:hover{}
 .skill span{
   color: rgb(22, 22, 230);
+}
+.col-md-5{
+  margin-top: 50px;
+}
+.col-md-5 p{
+  color: rgb(150, 142, 142);
+  margin-left:50px;
+}
+.col-md-5 strong{
+  color: #cacfd1;
 }
 .badge {
   display: flex;
@@ -263,14 +274,17 @@ nav ul li a:hover {
   color: #374151;
   transition: 0.3s;
   transition: all 0.3 ease;
-  margin-top: 5px;
+  margin-top:100px;
   animation: popIn 0.8s ease forwards;
 }
-
+.main-container{
+  margin-top: 50px;
+}
+.badge {
+  margin-top: 3px;
+}
 .badge i {
-  margin-right: 2px;
-  font-size: 22px;
-  
+font-size: 22px;
 }
 .python { color: #3776AB; }
 .django { color: #092E20; }
@@ -294,8 +308,9 @@ nav ul li a:hover {
 .api { color: #4A5568; }
 
 .badge:hover {
-  background-color: #58585a;
-  transform:scale(1.1)rotate(5deg);;
+  background-color: #bfbfc5;
+  transform:scale(1.1)rotate(10deg);
+  
 }
 .project-title {
   cursor: pointer;
