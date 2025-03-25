@@ -829,9 +829,6 @@ footer p{
     margin: 0px;
    font-size: 50px;
   }
-  .skill h1{
-
-  }
   #project-img {
     width: 100%;
     max-width: 450px;
@@ -872,7 +869,7 @@ footer p{
   padding-bottom: -100px;
 }
 .main-container{
-  margin-top: -50px;
+  margin-top: -15px;
 }
 #highlights .cer {
   display: flex;
@@ -881,6 +878,12 @@ footer p{
   padding: 15px;
   border-radius: 10px;
   margin-top: 5px; 
+}
+.col-md-5 p{
+  color: rgb(149, 143, 143);
+  margin: 1px;
+  text-align: justify;
+  word-spacing: -10px;
 }
 #highlights .expo h4 {
   margin: 0;
