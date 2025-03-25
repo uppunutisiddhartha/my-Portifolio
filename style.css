@@ -229,64 +229,27 @@ nav ul li a:hover {
   color: rgb(22, 22, 230);
 }
 
-.main {
+.main-container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;     
-  margin: 20px;
-  position: relative; /* ADD THIS */
-}
-
-.img-container img {
-  width: 250px;  
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom:0px;
-  transition: transform 0.2s linear;
-  display: block;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  width: 550px;
-  transform: translate(-50%, -50%);
-  color: rgb(244, 240, 240); 
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  text-align: center;
-margin-top: 70px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-  pointer-events: none; 
-  
-}
-.overlay-text h2{
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  width:100% ;
-  font-weight: bold;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  text-shadow: 10px 8px 22px rgba(6, 6, 6, 0.7);
-}
-.overlay-text span{
-  color: rgb(22, 22, 230);
-}
-
-.badge-container {
+}.badge-container {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
   max-width: 900px;
 }
-
+.skill{
+  text-align: center ;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+}
+.skill span{
+  color: rgb(22, 22, 230);
+}
 .badge {
   display: flex;
   align-items: center;
@@ -300,11 +263,12 @@ margin-top: 70px;
   color: #374151;
   transition: 0.3s;
   transition: all 0.3 ease;
+  margin-top: 5px;
   animation: popIn 0.8s ease forwards;
 }
 
 .badge i {
-  margin-right: 8px;
+  margin-right: 2px;
   font-size: 22px;
   
 }
@@ -842,7 +806,13 @@ footer p{
   .project-desc {
     margin-left: 20px;
   }
+  .skill{
+    margin: 0px;
+   font-size: 45px;
+  }
+  .skill h1{
 
+  }
   #project-img {
     width: 100%;
     max-width: 450px;
